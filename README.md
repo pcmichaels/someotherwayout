@@ -1,202 +1,137 @@
-<div align="center" style="margin-bottom:30px">
-    <a href='https://github.com/vagr9k/gatsby-material-starter/blob/master/LICENSE'>
-    <img src="https://img.shields.io/github/license/vagr9k/gatsby-material-starter.svg" alt="Logo" />
-    </a>
-    <a href='https://github.com/vagr9k/gatsby-material-starter'>
-    <img src="https://img.shields.io/github/v/tag/Vagr9K/gatsby-material-starter" alt="Logo" />
-    </a>
-        <a href='https://github.com/vagr9k/gatsby-material-starter/stargazers'>
-    <img src="https://img.shields.io/github/stars/Vagr9K/gatsby-material-starter" alt="Logo" />
-    </a>
-        <a href="https://twitter.com/intent/tweet?text=A%20cool%20%40gatsbyjs%20starter%3A&url=https%3A%2F%2Fgithub.com%2FVagr9K%2Fgatsby-material-starter">
-    <img src="https://img.shields.io/twitter/url/https/github.com/vagr9k/gatsby-material-starter.svg?style=social" alt="Logo" />
-    </a>
-</div>
-
-<div align="center"  style="margin-bottom:30px">
-    <img src="docs/logos/logo.png" alt="Logo" width='400px' height='400px'/>
-</div>
-<div align="center"  style="margin-bottom:30px">
-<img src="https://badgen.net/badge/Built With/TypeScript/blue" alt="Powered by TypeScript" />
-<a href='https://coveralls.io/github/Vagr9K/gatsby-material-starter?branch=master'><img src='https://coveralls.io/repos/github/Vagr9K/gatsby-material-starter/badge.svg?branch=master' alt='Coverage Status' /></a>
-<img href="https://gatsby-theme-material.netlify.app/"><img src="https://api.netlify.com/api/v1/badges/3be71899-cdb2-4b37-a1d2-e48acde5a706/deploy-status" alt="Material Demo"/></a>
-</div>
+![Netlify Next.js Blog Template designed by Bejamas](https://user-images.githubusercontent.com/43764894/223762618-62742b4e-9424-44a7-8e85-9f7e4e19db54.png)
 
 
-<div align="center"  style="margin-bottom:30px">
-<img href="https://open.vscode.dev/vagr9k/gatsby-material-starter"><img src="https://open.vscode.dev/badges/open-in-vscode.svg"/></a>
-</div>
+[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/nextjs-blog-theme)
 
-# Gatsby Material Starter
 
-A [Material Design](https://material.io/design) oriented blog starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby/) equipped with advanced features such as SEO, image optimization, PWA capabilities and infinite scrolling feeds.
+A customizable blog starter using:
 
-This starter aims to provide a minimal base for building advanced GatsbyJS powered websites by using the latest technologies to simplify your process.
+- [Next.js](https://github.com/vercel/next.js) v12
+- [Tailwind](https://tailwindcss.com/) v3.0
+- Built-in [MDX](https://mdxjs.com/) v1 support
+- Includes modern design with dark & light themes
 
-Starter supports both [TypeScript](https://www.typescriptlang.org/) and JavaScript, comes with [Jest](https://jestjs.io/) and [Cypress](https://www.cypress.io/) configurations and allows you to write Unit/Integration/E2E tests out of the box.
+![Preview of blog theme. Author named Jay Doe and blog's name is "Next.js Blog Theme" with one blog post](nextjs-blog-theme-preview.png)
 
-The starter uses [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced) under the hood and is based on the [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+[Take a gander at the demo.](https://bejamas-nextjs-blog.netlify.app)
 
-## Demo
+[Click here to watch the template walkthrough!](https://www.youtube.com/watch?v=63QZHs259dY)
 
-[Material Demo](https://gatsby-theme-material.netlify.app/).
+## Table of Contents:
 
-Visit [`gatsby-theme-material`](https://github.com/Vagr9K/gatsby-material-starter/tree/master/themes/material) for details regarding on how it was built using [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced).
-
-## Features
-
-- Gatsby v4 support
-- First class [TypeScript](https://www.typescriptlang.org/) support (for query data and components exposed by the theme)
-- [Material UI V5](https://material-ui.com/) components
-- [Emotion](https://emotion.sh/docs/introduction) used for styling
-- Posts in MDX
-  - Code syntax highlighting
-  - Embed videos
-  - Embed iframes
-- Infinite Scrolling
-- React Query for client side API calls
-- Tags
-  - Separate page for posts under each tag
-- Categories
-  - Separate page for posts under each category
-- Social features
-  - Twitter tweet button
-  - Facebook share/share count
-  - Reddit share/share count
-  - LinkedIn share button
-- Author section
-- Related posts computation and display based on category/tag match ranking
-- [Disqus](https://disqus.com/) support via [`gatsby-theme-advanced`](https://www.npmjs.com/package/gatsby-theme-advanced)
-- [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/) for optimized image generation
-- Inline SVG imports
-- High configurability
-- Separate components for everything:
-  - Gatsby Link utilities
-  - SEO
-  - Disqus
-- PWA features
-  - Offline support
-  - Web App Manifest support
-  - Loading progress for slow networks
-- SEO
-  - [Google gtag.js](https://developers.google.com/gtagjs/) support
-  - Sitemap generation
-  - General description tags
-  - [Google Structured Data](https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data)
-  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
-  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
-- RSS feeds
-- Development tools
-  - Yarn 3
-  - [Jest](https://jestjs.io/) for unit/integration testing
-  - [Cypress](https://www.cypress.io/) for E2E testing
-  - CI via GitHub Actions
-  - CD via GitHub Actions
-  - [ESLint](https://eslint.org/) for linting
-  - [Prettier](https://prettier.io/) for code formatting
-  - [React Hooks Linting](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-  - Remark-Lint for linting Markdown
-  - write-good for linting English prose
-  - gh-pages for deploying to GitHub pages
-  - [Netlify](https://www.netlify.com/) deploy configuration
+- [Getting Started](#getting-started)
+  - [Setting Up Locally](#setting-up-locally)
+  - [Using the Wizard](#using-the-setup-wizard)
+- [Configuring the Blog](#configuring-the-blog)
+- [Adding New Posts](#adding-new-posts)
+- [Testing](#testing)
+  - [Included Default Testing](#included-default-testing)
+  - [Removing Renovate](#removing-renovate)
+  - [Removing Cypress](#removing-cypress)
 
 ## Getting Started
 
-Install this starter by running the following commands from your CLI:
+---
 
-```sh
-gatsby new YourProjectName https://github.com/Vagr9K/gatsby-material-starter
-cd YourProjectName
-yarn develop # or gatsby develop
+You can get started with this project in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
+
+### Setting Up Locally
+
+If you're doing it locally, start with clicking the [use this template](https://github.com/netlify-templates/nextjs-blog-theme/generate) button on GitHub. This will create a new repository with this template's files on your GitHub account. Once that is done, clone your new repository and navigate to it in your terminal.
+
+From there, you can install the project's dependencies by running:
+
+```shell
+yarn install
 ```
 
-Note that the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli) needs to be installed and updated for the `gatsby` command to work.
+Finally, you can run your project locally with:
 
-Alternatively you can fork the project, make your changes and merge new upstream features when needed:
-
-- [Fork this repository on GitHub](https://github.com/Vagr9K/gatsby-material-starter/fork)
-- Run the following commands:
-
-  ```sh
-  git clone https://github.com/${YourUsername}/${YourForkName} YourForkName # Clone your fork
-  cd YourForkName
-  yarn install # or yarn install
-  yarn develop # or yarn develop
-  ```
-
-## Receiving upstream updates
-
-You have multiple options when it comes to receiving upstream updates:
-
-- Pull and merge upstream changes into your repo
-- Change the version of `gatsby-theme-material` from local to remote.
-
-First option allows you to make your own changes to the theme without having to fork and publish it. This is the default approach when you clone/fork the starter repository.
-
-Second option simplifies your CI/CD setup and allows you to receive updates by simply bumping the package version.
-
-To switch to the remote version, open `package.json` and edit the dependency section:
-
-```js
- "gatsby-theme-material": "*",
+```shell
+yarn run dev
 ```
 
-into
+Open your browser and visit <http://localhost:3000>, your project should be running!
 
-```js
- "gatsby-theme-material": "3.1.0", // Or the version you want
+### Using the Setup Wizard
+
+![Preview of Setup Wizard showing the initial page of a setup form](nextjs-setup-wizard.png)
+
+Through the [setup wizard](https://nextjs-wizard.netlify.app/), you can create your blog in a few clicks and deploy to Netlify.
+
+## Configuring the blog
+
+The config is based on environment variables to make it easy to integrate with any Jamstack platform, like Netlify.
+
+Here are the variables you can edit:
+| Variable | Description | Options
+| --- | --- | --- |
+| `BLOG_NAME` | the name of your blog, displayed below the avatar ||
+| `BLOG_TITLE` | the main header (`h1`) on the home page ||
+| `BLOG_FOOTER_TEXT`| the text in the footer ||
+| `BLOG_THEME` | the theme to pass to Tailwind | default |
+| `BLOG_FONT_HEADINGS` | the font-family for all HTML headings, from `h1` to `h6`| sans-serif (default), serif, monospace|
+| `BLOG_FONT_PARAGRAPHS` | the font-family for all other HTML elements | sans-serif (default), serif, monospace|
+
+All of the env variables can be configured through the [Wizard](https://nextjs-wizard.netlify.app/) or through setting the project's environment variables. You can do this in your Netlify dashaboard (Site settings/Build & deploy/Environment/Environment variables).
+
+https://user-images.githubusercontent.com/3611928/153997545-6dcdeef0-e570-49e7-93d6-ce0d393d16c9.mp4
+
+[alt: video walkthrough of editing env vars]
+
+If setting an environment variable isn't your cup of tea, the defaults can be changed in [`utils/global-data.js`](/utils/global-data.js). You can also remove the variables and hard code blog information where these variables are used in the code base.
+
+- `BLOG_THEME, BLOG_FONT_HEADINGS, & BLOG_FONT_PARAGRAPHS` are used in [`tailwind-preset.js`](tailwind-preset.js)
+- `BLOG_NAME, BLOG_TITLE, BLOG_FOOTER_TEXT` are used in [`pages/index.js`](pages/index.js) & [`pages/posts/[slug].js`](pages/posts/[slug].js) through the `globalData` object.
+
+## Adding new posts
+
+All posts are stored in `/posts` directory. To make a new post, create a new file with the [`.mdx` extension](https://mdxjs.com/).
+
+Since the posts are written in `MDX` format you can pass props and components. That means you can use [React components](https://reactjs.org/docs/components-and-props.html) inside your posts to make them more interactive. Learn more about how to do so in the [MDX docs on content](https://mdxjs.com/docs/using-mdx/#components).
+
+https://user-images.githubusercontent.com/3611928/152727802-102ec296-41c8-446d-93ed-922d11187073.mp4
+
+[alt: video walkthrough of adding a new blog post]
+
+## Testing
+
+### Included Default Testing
+
+We’ve included some tooling that helps us maintain these templates. This template currently uses:
+
+- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
+- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
+- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+
+If your team is not interested in this tooling, you can remove them with ease!
+
+### Removing Renovate
+
+In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+
+### Removing Cypress
+
+For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
+
+```diff
+[[plugins]]
+  package = "netlify-plugin-cypress"
+-  [plugins.inputs.postBuild]
+-    enable = true
+-
+-  [plugins.inputs]
+-    enable = false
 ```
 
-## Configuration
+If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
 
-To configure the theme edit your `gatsby-config.js`:
-
-```js
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-theme-material`,
-      options: {
-        basePath: `/blog`,
-      },
-    },
-  ],
-};
+```bash
+npm uninstall -D netlify-plugin-cypress
 ```
 
-For configuring the theme, consult its documentation pages:
+And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
 
-- [Material](themes/material/README.md)
-
-### NetlifyCMS
-
-First of all, make sure to edit `static/admin/config.yml` and add your [GitHub/GitLab/NetlifyId credentials](https://www.netlifycms.org/docs/authentication-backends/):
-
-```yml
-backend:
-  name: github # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
-  branch: master # Branch to update
-  repo: vagr9k/gatsby-material-starter # Repo for pushing new commits. Make sure to replace with your repo!
+```bash
+npm uninstall cypress
 ```
-
-You can visit `/admin/` after and will be greeted by a login dialog (depending on the auth provider you ave chosen above).
-
-If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
-
-```js
-import CMS from "netlify-cms-app";
-
-CMS.init({
-  config: {
-    backend: {
-      name: "git-gateway",
-    },
-  },
-});
-```
-
-For NetlifyCMS specific issues visit the [official documentation](https://www.netlifycms.org/docs/intro/).
-
-# Author
-
-Ruben Harutyunyan ([@Vagr9K](https://twitter.com/Vagr9K))
